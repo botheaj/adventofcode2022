@@ -1,11 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
-	"strconv"
 	"sort"
+	"strconv"
 )
 
 func main() {
@@ -13,10 +13,9 @@ func main() {
 	elfCal := 0
 
 	f, err := os.Open("input.txt")
-    check(err)
-    defer f.Close()
+	check(err)
+	defer f.Close()
 	sc := bufio.NewScanner(f)
-
 
 	for sc.Scan() {
 		if sc.Text() != "" {
@@ -27,8 +26,8 @@ func main() {
 			elfWeights = append(elfWeights, elfCal)
 			elfCal = 0
 		}
-    }
-	
+	}
+
 	sort.Slice(elfWeights, func(i, j int) bool {
 		return elfWeights[i] < elfWeights[j]
 	})
@@ -38,7 +37,7 @@ func main() {
 }
 
 func check(e error) {
-    if e != nil {
-        panic(e)
-    }
+	if e != nil {
+		panic(e)
+	}
 }
