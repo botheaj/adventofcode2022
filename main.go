@@ -7,9 +7,12 @@ import (
 )
 
 func main() {
-	// fmt.Println("Day 1")
-	// day.One("inputs/1.txt")
+	fmt.Println("Day 1")
+	day.One("inputs/1.txt")
 
 	fmt.Println("Day 2")
 	day.Two("inputs/2.txt")
+
+	fmt.Println("Day 3")
+	day.Three("inputs/3.txt")
 }
