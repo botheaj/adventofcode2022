@@ -14,8 +14,7 @@ func Three(filepath string) {
 
 	for sc.Scan() {
 		if sc.Text() != "" {
-			fmt.Println(sc.Text)
-			check(err)
+			fmt.Println(sc.Text())
 		}
 	}
 }
