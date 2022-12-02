@@ -1,4 +1,4 @@
-package main
+package day
 
 import (
 	"bufio"
@@ -8,11 +8,11 @@ import (
 	"strconv"
 )
 
-func main() {
+func One(filepath string) {
 	var elfWeights []int
 	elfCal := 0
 
-	f, err := os.Open("input.txt")
+	f, err := os.Open(filepath)
 	check(err)
 	defer f.Close()
 	sc := bufio.NewScanner(f)
@@ -34,10 +34,4 @@ func main() {
 	fmt.Println("part 1:", elfWeights[len(elfWeights)-1])
 
 	fmt.Println("part 2:", (elfWeights[len(elfWeights)-1] + elfWeights[len(elfWeights)-2] + elfWeights[len(elfWeights)-3]))
-}
-
-func check(e error) {
-	if e != nil {
-		panic(e)
-	}
 }
