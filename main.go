@@ -18,4 +18,7 @@ func main() {
 
 	fmt.Println("Day 4")
 	day.Four("inputs/4.txt")
+
+	fmt.Println("Day 5")
+	day.Five("inputs/5.txt")
 }
