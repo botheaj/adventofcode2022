@@ -20,5 +20,6 @@ func main() {
 	day.Four("inputs/4.txt")
 
 	fmt.Println("Day 5")
-	day.Five("inputs/5.txt")
+	fmt.Println(day.Five("inputs/5.txt"))
+	fmt.Println(day.FivePart2("inputs/5.txt"))
 }
