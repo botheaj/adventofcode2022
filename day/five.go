@@ -25,16 +25,6 @@ func Five(filepath string) []string {
 	var output []string
 	var digits []int
 
-	// calculate column values
-
-	// column1 := []string{"Z", "N"}
-	// column2 := []string{"M", "C", "D"}
-	// column3 := []string{"P"}
-
-	// set = append(set, column1)
-	// set = append(set, column2)
-	// set = append(set, column3)
-
 	for sc.Scan() {
 
 		// blank out the digits slice
@@ -108,14 +98,6 @@ func FivePart2(filepath string) []string {
 	var digits []int
 
 	// calculate column values
-
-	// column1 := []string{"Z", "N"}
-	// column2 := []string{"M", "C", "D"}
-	// column3 := []string{"P"}
-
-	// set = append(set, column1)
-	// set = append(set, column2)
-	// set = append(set, column3)
 
 	for sc.Scan() {
 
