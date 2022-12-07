@@ -35,3 +35,12 @@ func compare(a []string, b []string) bool {
 	}
 	return match
 }
+
+func TestDay6(t *testing.T) {
+	expected := 5
+	results = day.Six("inputs/5_test.txt")
+	fmt.Println("6 expected", expected)
+	if !compare(expected, results) {
+		t.Error("Does not match expected output")
+	}
+}
