@@ -13,9 +13,21 @@ func Eight(filepath string) {
 	defer f.Close()
 	sc := bufio.NewScanner(f)
 
+	rowsOfTrees := 0
+	columnsOfTrees := 0
+	lineCount := 0
+	rowA := []string{}
+	rowB := []string{}
+	rowC := []string{}
 	for sc.Scan() {
-		if sc.Text() != "" {
-			fmt.Println(sc.Text())
-		}
+		lineCount++
+		columnsOfTrees = (len(sc.Text()) * 2) - 4
 	}
+
+	for sc.Scan() {
+		rowsOfTrees += 2
+
+	}
+	totalVisibleTrees := rowsOfTrees + columnsOfTrees
+	fmt.Println("total visible tress:", totalVisibleTrees)
 }
